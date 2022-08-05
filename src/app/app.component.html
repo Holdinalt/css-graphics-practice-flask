@@ -2,26 +2,29 @@
 
   <div class="reward-wrapper">
     <div class="rewards-price">
-      <div>5k -</div>
-      <div>10k -</div>
-      <div>15k -</div>
-      <div>20k -</div>
-      <div>25k -</div>
-      <div>30k -</div>
-      <div>35k -</div>
-      <div>40k -</div>
-      <div>45k -</div>
-      <div>50k -</div>
-      <div style="visibility: hidden">55</div>
-      <div>60k -</div>
-      <div style="visibility: hidden">65</div>
-      <div style="visibility: hidden">70</div>
-      <div>75k -</div>
-      <div style="visibility: hidden">80</div>
-      <div style="visibility: hidden">85</div>
-      <div style="visibility: hidden">90</div>
-      <div style="visibility: hidden">95</div>
-      <div>100k -</div>
+      <div *ngFor="let rew of data" [style.margin-bottom]="marginBottom + 'px'">
+        <span [ngClass]="{fontHighlight:(rew.price <= money)}">{{rew.price / 1000}}K -</span>
+      </div>
+<!--      <div>5k -</div>-->
+<!--      <div>10k -</div>-->
+<!--      <div>15k -</div>-->
+<!--      <div>20k -</div>-->
+<!--      <div>25k -</div>-->
+<!--      <div>30k -</div>-->
+<!--      <div>35k -</div>-->
+<!--      <div>40k -</div>-->
+<!--      <div>45k -</div>-->
+<!--      <div>50k -</div>-->
+<!--      <div style="visibility: hidden">55</div>-->
+<!--      <div>60k -</div>-->
+<!--      <div style="visibility: hidden">65</div>-->
+<!--      <div style="visibility: hidden">70</div>-->
+<!--      <div>75k -</div>-->
+<!--      <div style="visibility: hidden">80</div>-->
+<!--      <div style="visibility: hidden">85</div>-->
+<!--      <div style="visibility: hidden">90</div>-->
+<!--      <div style="visibility: hidden">95</div>-->
+<!--      <div>100k -</div>-->
     </div>
 
 
@@ -41,26 +44,29 @@
 
 
     <div class="rewards-describe">
-      <div>- ВЕЧЕР ФИЛЬМОВ УЖАСОВ</div>
-      <div>- ДЕНЬ ИГРЫ В LOL НА КОНТРОЛЛЕРЕ</div>
-      <div>- ИГРЫ СО ЗРИТЕЛЯМИ</div>
-      <div>- ПРОБУЮ СУПЕР ОСТРУЮ ЕДУ</div>
-      <div>- КАРАОКЕ (ПЕСНИ НА ВЫБОР ЧАТА)</div>
-      <div>- СТРИМ ПО ДОТА 2</div>
-      <div>- IRL СТРИМ В ПАРКЕ</div>
-      <div>- БУХЛОСТРИМ LOL И APEX</div>
-      <div>- СМОТРИМ АНИМЕ (НА ВЫБОР ЧАТА)</div>
-      <div>- РОЗЫГРЫШ 50 СКИНОВ</div>
-      <div style="visibility: hidden">FF</div>
-      <div>- СБРИВАЮ БОРОДУ (ОСТАВЛЯЮ УСЫ)</div>
-      <div style="visibility: hidden">FF</div>
-      <div style="visibility: hidden">FF</div>
-      <div>- КРАШУ ВОЛОСЫ (ЦВЕТ ВЫБИРАЕТ ЧАТ)</div>
-      <div style="visibility: hidden">FF</div>
-      <div style="visibility: hidden">FF</div>
-      <div style="visibility: hidden">FF</div>
-      <div style="visibility: hidden">FF</div>
-      <div>- !GENERAL_HS ЧЕЛЛЕНЖ</div>
+      <div *ngFor="let rew of data" [style.margin-bottom]="marginBottom + 'px'">
+        <span [ngClass]="{fontHighlight:(rew.price <= money)}">- {{rew.value}}</span>
+      </div>
+<!--      <div>- ВЕЧЕР ФИЛЬМОВ УЖАСОВ</div>-->
+<!--      <div>- ДЕНЬ ИГРЫ В LOL НА КОНТРОЛЛЕРЕ</div>-->
+<!--      <div>- ИГРЫ СО ЗРИТЕЛЯМИ</div>-->
+<!--      <div>- ПРОБУЮ СУПЕР ОСТРУЮ ЕДУ</div>-->
+<!--      <div>- КАРАОКЕ (ПЕСНИ НА ВЫБОР ЧАТА)</div>-->
+<!--      <div>- СТРИМ ПО ДОТА 2</div>-->
+<!--      <div>- IRL СТРИМ В ПАРКЕ</div>-->
+<!--      <div>- БУХЛОСТРИМ LOL И APEX</div>-->
+<!--      <div>- СМОТРИМ АНИМЕ (НА ВЫБОР ЧАТА)</div>-->
+<!--      <div>- РОЗЫГРЫШ 50 СКИНОВ</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div>- СБРИВАЮ БОРОДУ (ОСТАВЛЯЮ УСЫ)</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div>- КРАШУ ВОЛОСЫ (ЦВЕТ ВЫБИРАЕТ ЧАТ)</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div style="visibility: hidden">FF</div>-->
+<!--      <div>- !GENERAL_HS ЧЕЛЛЕНЖ</div>-->
     </div>
   </div>
 

@@ -26,19 +26,19 @@ export class AppComponent{
   partHeight = 100;
 
   data: reward[] = [
-    new reward(5000, 'ВЕЧЕР ФИЛЬМОВ УЖАСОВ'),
-    new reward(10000, 'ДЕНЬ ИГРЫ В LOL НА КОНТРОЛЛЕРЕ'),
-    new reward(15000, 'ИГРЫ СО ЗРИТЕЛЯМИ'),
-    new reward(20000, 'ПРОБУЮ СУПЕР ОСТРУЮ ЕДУ'),
-    new reward(25000, 'КАРАОКЕ (ПЕСНИ НА ВЫБОР ЧАТА)'),
-    new reward(30000, 'СТРИМ ПО ДОТА 2'),
-    new reward(35000, 'IRL СТРИМ В ПАРКЕ'),
-    new reward(40000, 'БУХЛОСТРИМ LOL И APEX'),
-    new reward(45000, 'СМОТРИМ АНИМЕ (НА ВЫБОР ЧАТА)'),
-    new reward(50000, 'РОЗЫГРЫШ 50 СКИНОВ'),
-    new reward(60000, 'СБРИВАЮ БОРОДУ (ОСТАВЛЯЮ УСЫ)'),
-    new reward(75000, 'КРАШУ ВОЛОСЫ (ЦВЕТ ВЫБИРАЕТ ЧАТ)'),
-    new reward(100000, '!GENERAL_HS ЧЕЛЛЕНЖ')
+    new reward(5000, 'HORROR MOVIE NIGHT'),
+    new reward(10000, 'PLAYING LOL ON THE CONTROLLER'),
+    new reward(15000, 'PLAYING WITH VIEWERS'),
+    new reward(20000, 'TASTE SUPER SPICY FOOD'),
+    new reward(25000, 'KARAOKE WITH VIEWERS'),
+    new reward(30000, 'PLAY DOTA 2'),
+    new reward(35000, 'STREAM WITH FAMILY'),
+    new reward(40000, 'STREAM WITH FRIENDS'),
+    new reward(45000, 'ANIME STREAM'),
+    new reward(50000, 'GIVEAWAY'),
+    new reward(60000, 'SHAVE OFF MY BEARD'),
+    new reward(75000, 'DYE MY HAIR'),
+    new reward(100000, 'GIVEAWAY 2')
   ]
 
 
